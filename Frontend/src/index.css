@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sandy-beige: #F5F0E6;
+  --color-soft-white: #FAFAFA;
+  --color-coconut-brown: #5C4033;
+  --color-deep-ocean: #1A3C40;
+  --color-sunset-gold: #D69E2E;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-signature: 'Great Vibes', cursive;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-soft-white);
+  color: var(--color-coconut-brown);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
